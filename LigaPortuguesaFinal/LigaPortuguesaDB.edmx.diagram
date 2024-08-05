@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="19a96e2f83a24e898c47f75f6a496e97" Name="Diagram1">
+        <EntityTypeShape EntityType="LigaPortuguesaModel.Equipas" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LigaPortuguesaModel.Jogos" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LigaPortuguesaModel.Jornadas" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LigaPortuguesaModel.Ligas" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <AssociationConnector Association="LigaPortuguesaModel.FK__Equipas__IdLiga__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="LigaPortuguesaModel.FK__Jogos__IdEquipaC__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="LigaPortuguesaModel.FK__Jogos__IdEquipaF__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="LigaPortuguesaModel.FK__Jogos__IdJornada__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="LigaPortuguesaModel.FK__Jornadas__IdLiga__4E88ABD4" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

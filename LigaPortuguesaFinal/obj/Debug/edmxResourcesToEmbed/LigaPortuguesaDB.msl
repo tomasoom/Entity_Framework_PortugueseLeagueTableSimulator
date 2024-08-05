@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LigaPortuguesaModelStoreContainer" CdmEntityContainer="LigaPortuguesaDB">
+    <EntitySetMapping Name="Equipas">
+      <EntityTypeMapping TypeName="LigaPortuguesaModel.Equipas">
+        <MappingFragment StoreEntitySet="Equipas">
+          <ScalarProperty Name="IdEquipa" ColumnName="IdEquipa" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Estadio" ColumnName="Estadio" />
+          <ScalarProperty Name="IdLiga" ColumnName="IdLiga" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jogos">
+      <EntityTypeMapping TypeName="LigaPortuguesaModel.Jogos">
+        <MappingFragment StoreEntitySet="Jogos">
+          <ScalarProperty Name="IsFinished" ColumnName="IsFinished" />
+          <ScalarProperty Name="IdJogo" ColumnName="IdJogo" />
+          <ScalarProperty Name="IdJornada" ColumnName="IdJornada" />
+          <ScalarProperty Name="IdEquipaCasa" ColumnName="IdEquipaCasa" />
+          <ScalarProperty Name="IdEquipaFora" ColumnName="IdEquipaFora" />
+          <ScalarProperty Name="GolosCasa" ColumnName="GolosCasa" />
+          <ScalarProperty Name="GolosFora" ColumnName="GolosFora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jornadas">
+      <EntityTypeMapping TypeName="LigaPortuguesaModel.Jornadas">
+        <MappingFragment StoreEntitySet="Jornadas">
+          <ScalarProperty Name="IdJornada" ColumnName="IdJornada" />
+          <ScalarProperty Name="IdLiga" ColumnName="IdLiga" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ligas">
+      <EntityTypeMapping TypeName="LigaPortuguesaModel.Ligas">
+        <MappingFragment StoreEntitySet="Ligas">
+          <ScalarProperty Name="IdLiga" ColumnName="IdLiga" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

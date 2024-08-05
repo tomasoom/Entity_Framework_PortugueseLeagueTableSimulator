@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LigaPortuguesaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Equipas">
+          <Key>
+            <PropertyRef Name="IdEquipa" />
+          </Key>
+          <Property Name="IdEquipa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nome" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Estadio" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="IdLiga" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Jogos">
+          <Key>
+            <PropertyRef Name="IdJogo" />
+          </Key>
+          <Property Name="IdJogo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdJornada" Type="int" Nullable="false" />
+          <Property Name="IdEquipaCasa" Type="int" Nullable="false" />
+          <Property Name="IdEquipaFora" Type="int" Nullable="false" />
+          <Property Name="GolosCasa" Type="int" Nullable="false" />
+          <Property Name="GolosFora" Type="int" Nullable="false" />
+          <Property Name="IsFinished" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Jornadas">
+          <Key>
+            <PropertyRef Name="IdJornada" />
+          </Key>
+          <Property Name="IdJornada" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdLiga" Type="int" Nullable="false" />
+          <Property Name="Nome" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Ligas">
+          <Key>
+            <PropertyRef Name="IdLiga" />
+          </Key>
+          <Property Name="IdLiga" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nome" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Equipas__IdLiga__4BAC3F29">
+          <End Role="Ligas" Type="Self.Ligas" Multiplicity="1" />
+          <End Role="Equipas" Type="Self.Equipas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ligas">
+              <PropertyRef Name="IdLiga" />
+            </Principal>
+            <Dependent Role="Equipas">
+              <PropertyRef Name="IdLiga" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Jogos__IdEquipaC__5535A963">
+          <End Role="Equipas" Type="Self.Equipas" Multiplicity="1" />
+          <End Role="Jogos" Type="Self.Jogos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipas">
+              <PropertyRef Name="IdEquipa" />
+            </Principal>
+            <Dependent Role="Jogos">
+              <PropertyRef Name="IdEquipaCasa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Jogos__IdEquipaF__5629CD9C">
+          <End Role="Equipas" Type="Self.Equipas" Multiplicity="1" />
+          <End Role="Jogos" Type="Self.Jogos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipas">
+              <PropertyRef Name="IdEquipa" />
+            </Principal>
+            <Dependent Role="Jogos">
+              <PropertyRef Name="IdEquipaFora" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Jogos__IdJornada__5441852A">
+          <End Role="Jornadas" Type="Self.Jornadas" Multiplicity="1" />
+          <End Role="Jogos" Type="Self.Jogos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jornadas">
+              <PropertyRef Name="IdJornada" />
+            </Principal>
+            <Dependent Role="Jogos">
+              <PropertyRef Name="IdJornada" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Jornadas__IdLiga__4E88ABD4">
+          <End Role="Ligas" Type="Self.Ligas" Multiplicity="1" />
+          <End Role="Jornadas" Type="Self.Jornadas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ligas">
+              <PropertyRef Name="IdLiga" />
+            </Principal>
+            <Dependent Role="Jornadas">
+              <PropertyRef Name="IdLiga" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="LigaPortuguesaModelStoreContainer">
+          <EntitySet Name="Equipas" EntityType="Self.Equipas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Jogos" EntityType="Self.Jogos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Jornadas" EntityType="Self.Jornadas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ligas" EntityType="Self.Ligas" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Equipas__IdLiga__4BAC3F29" Association="Self.FK__Equipas__IdLiga__4BAC3F29">
+            <End Role="Ligas" EntitySet="Ligas" />
+            <End Role="Equipas" EntitySet="Equipas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Jogos__IdEquipaC__5535A963" Association="Self.FK__Jogos__IdEquipaC__5535A963">
+            <End Role="Equipas" EntitySet="Equipas" />
+            <End Role="Jogos" EntitySet="Jogos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Jogos__IdEquipaF__5629CD9C" Association="Self.FK__Jogos__IdEquipaF__5629CD9C">
+            <End Role="Equipas" EntitySet="Equipas" />
+            <End Role="Jogos" EntitySet="Jogos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Jogos__IdJornada__5441852A" Association="Self.FK__Jogos__IdJornada__5441852A">
+            <End Role="Jornadas" EntitySet="Jornadas" />
+            <End Role="Jogos" EntitySet="Jogos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Jornadas__IdLiga__4E88ABD4" Association="Self.FK__Jornadas__IdLiga__4E88ABD4">
+            <End Role="Ligas" EntitySet="Ligas" />
+            <End Role="Jornadas" EntitySet="Jornadas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LigaPortuguesaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Equipas">
+          <Key>
+            <PropertyRef Name="IdEquipa" />
+          </Key>
+          <Property Name="IdEquipa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Estadio" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IdLiga" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Ligas" Relationship="Self.FK__Equipas__IdLiga__4BAC3F29" FromRole="Equipas" ToRole="Ligas" />
+          <NavigationProperty Name="Jogos" Relationship="Self.FK__Jogos__IdEquipaC__5441852A" FromRole="Equipas" ToRole="Jogos" />
+          <NavigationProperty Name="Jogos1" Relationship="Self.FK__Jogos__IdEquipaF__5535A963" FromRole="Equipas" ToRole="Jogos" />
+        </EntityType>
+        <EntityType Name="Jogos">
+          <Key>
+            <PropertyRef Name="IdJogo" />
+          </Key>
+          <Property Name="IdJogo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdJornada" Type="Int32" Nullable="false" />
+          <Property Name="IdEquipaCasa" Type="Int32" Nullable="false" />
+          <Property Name="IdEquipaFora" Type="Int32" Nullable="false" />
+          <Property Name="GolosCasa" Type="Int32" Nullable="false" />
+          <Property Name="GolosFora" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Equipas" Relationship="Self.FK__Jogos__IdEquipaC__5441852A" FromRole="Jogos" ToRole="Equipas" />
+          <NavigationProperty Name="Equipas1" Relationship="Self.FK__Jogos__IdEquipaF__5535A963" FromRole="Jogos" ToRole="Equipas" />
+          <NavigationProperty Name="Jornadas" Relationship="Self.FK__Jogos__IdJornada__534D60F1" FromRole="Jogos" ToRole="Jornadas" />
+          <Property Name="IsFinished" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Jornadas">
+          <Key>
+            <PropertyRef Name="IdJornada" />
+          </Key>
+          <Property Name="IdJornada" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdLiga" Type="Int32" Nullable="false" />
+          <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Jogos" Relationship="Self.FK__Jogos__IdJornada__534D60F1" FromRole="Jornadas" ToRole="Jogos" />
+          <NavigationProperty Name="Ligas" Relationship="Self.FK__Jornadas__IdLiga__4E88ABD4" FromRole="Jornadas" ToRole="Ligas" />
+        </EntityType>
+        <EntityType Name="Ligas">
+          <Key>
+            <PropertyRef Name="IdLiga" />
+          </Key>
+          <Property Name="IdLiga" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Equipas" Relationship="Self.FK__Equipas__IdLiga__4BAC3F29" FromRole="Ligas" ToRole="Equipas" />
+          <NavigationProperty Name="Jornadas" Relationship="Self.FK__Jornadas__IdLiga__4E88ABD4" FromRole="Ligas" ToRole="Jornadas" />
+        </EntityType>
+        <Association Name="FK__Equipas__IdLiga__4BAC3F29">
+          <End Role="Ligas" Type="Self.Ligas" Multiplicity="1" />
+          <End Role="Equipas" Type="Self.Equipas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ligas">
+              <PropertyRef Name="IdLiga" />
+            </Principal>
+            <Dependent Role="Equipas">
+              <PropertyRef Name="IdLiga" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Jogos__IdEquipaC__5441852A">
+          <End Role="Equipas" Type="Self.Equipas" Multiplicity="1" />
+          <End Role="Jogos" Type="Self.Jogos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipas">
+              <PropertyRef Name="IdEquipa" />
+            </Principal>
+            <Dependent Role="Jogos">
+              <PropertyRef Name="IdEquipaCasa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Jogos__IdEquipaF__5535A963">
+          <End Role="Equipas" Type="Self.Equipas" Multiplicity="1" />
+          <End Role="Jogos" Type="Self.Jogos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipas">
+              <PropertyRef Name="IdEquipa" />
+            </Principal>
+            <Dependent Role="Jogos">
+              <PropertyRef Name="IdEquipaFora" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Jogos__IdJornada__534D60F1">
+          <End Role="Jornadas" Type="Self.Jornadas" Multiplicity="1" />
+          <End Role="Jogos" Type="Self.Jogos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jornadas">
+              <PropertyRef Name="IdJornada" />
+            </Principal>
+            <Dependent Role="Jogos">
+              <PropertyRef Name="IdJornada" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Jornadas__IdLiga__4E88ABD4">
+          <End Role="Ligas" Type="Self.Ligas" Multiplicity="1" />
+          <End Role="Jornadas" Type="Self.Jornadas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ligas">
+              <PropertyRef Name="IdLiga" />
+            </Principal>
+            <Dependent Role="Jornadas">
+              <PropertyRef Name="IdLiga" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="LigaPortuguesaDB" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Equipas" EntityType="Self.Equipas" />
+          <EntitySet Name="Jogos" EntityType="Self.Jogos" />
+          <EntitySet Name="Jornadas" EntityType="Self.Jornadas" />
+          <EntitySet Name="Ligas" EntityType="Self.Ligas" />
+          <AssociationSet Name="FK__Equipas__IdLiga__4BAC3F29" Association="Self.FK__Equipas__IdLiga__4BAC3F29">
+            <End Role="Ligas" EntitySet="Ligas" />
+            <End Role="Equipas" EntitySet="Equipas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Jogos__IdEquipaC__5441852A" Association="Self.FK__Jogos__IdEquipaC__5441852A">
+            <End Role="Equipas" EntitySet="Equipas" />
+            <End Role="Jogos" EntitySet="Jogos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Jogos__IdEquipaF__5535A963" Association="Self.FK__Jogos__IdEquipaF__5535A963">
+            <End Role="Equipas" EntitySet="Equipas" />
+            <End Role="Jogos" EntitySet="Jogos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Jogos__IdJornada__534D60F1" Association="Self.FK__Jogos__IdJornada__534D60F1">
+            <End Role="Jornadas" EntitySet="Jornadas" />
+            <End Role="Jogos" EntitySet="Jogos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Jornadas__IdLiga__4E88ABD4" Association="Self.FK__Jornadas__IdLiga__4E88ABD4">
+            <End Role="Ligas" EntitySet="Ligas" />
+            <End Role="Jornadas" EntitySet="Jornadas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LigaPortuguesaModelStoreContainer" CdmEntityContainer="LigaPortuguesaDB">
+          <EntitySetMapping Name="Equipas">
+            <EntityTypeMapping TypeName="LigaPortuguesaModel.Equipas">
+              <MappingFragment StoreEntitySet="Equipas">
+                <ScalarProperty Name="IdEquipa" ColumnName="IdEquipa" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Estadio" ColumnName="Estadio" />
+                <ScalarProperty Name="IdLiga" ColumnName="IdLiga" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Jogos">
+            <EntityTypeMapping TypeName="LigaPortuguesaModel.Jogos">
+              <MappingFragment StoreEntitySet="Jogos">
+                <ScalarProperty Name="IsFinished" ColumnName="IsFinished" />
+                <ScalarProperty Name="IdJogo" ColumnName="IdJogo" />
+                <ScalarProperty Name="IdJornada" ColumnName="IdJornada" />
+                <ScalarProperty Name="IdEquipaCasa" ColumnName="IdEquipaCasa" />
+                <ScalarProperty Name="IdEquipaFora" ColumnName="IdEquipaFora" />
+                <ScalarProperty Name="GolosCasa" ColumnName="GolosCasa" />
+                <ScalarProperty Name="GolosFora" ColumnName="GolosFora" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Jornadas">
+            <EntityTypeMapping TypeName="LigaPortuguesaModel.Jornadas">
+              <MappingFragment StoreEntitySet="Jornadas">
+                <ScalarProperty Name="IdJornada" ColumnName="IdJornada" />
+                <ScalarProperty Name="IdLiga" ColumnName="IdLiga" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ligas">
+            <EntityTypeMapping TypeName="LigaPortuguesaModel.Ligas">
+              <MappingFragment StoreEntitySet="Ligas">
+                <ScalarProperty Name="IdLiga" ColumnName="IdLiga" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

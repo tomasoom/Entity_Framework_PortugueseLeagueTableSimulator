@@ -1,0 +1,15 @@
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\bin\Release\LigaPortuguesaFinal.exe.config
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\bin\Release\LigaPortuguesaFinal.exe
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\bin\Release\LigaPortuguesaFinal.pdb
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\bin\Release\EntityFramework.dll
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\bin\Release\EntityFramework.xml
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\obj\Release\LigaPortuguesaFinal.csproj.AssemblyReference.cache
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\obj\Release\LigaPortuguesaFinal.frmLigaPortuguesa.resources
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\obj\Release\LigaPortuguesaFinal.Properties.Resources.resources
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\obj\Release\LigaPortuguesaFinal.csproj.GenerateResource.cache
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\obj\Release\LigaPortuguesaFinal.csproj.CoreCompileInputs.cache
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\obj\Release\LigaPort.9A8C87E0.Up2Date
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\obj\Release\LigaPortuguesaFinal.exe
+C:\Users\Msi\source\repos\LigaPortuguesaFinal\obj\Release\LigaPortuguesaFinal.pdb

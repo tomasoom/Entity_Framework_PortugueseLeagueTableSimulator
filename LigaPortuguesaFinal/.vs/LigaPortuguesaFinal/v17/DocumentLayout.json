@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|c:\\users\\msi\\source\\repos\\ligaportuguesafinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\classes\\jornadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|solutionrelative:classes\\jornadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\ligaportuguesadb.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|solutionrelative:ligaportuguesadb.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\equipas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|solutionrelative:equipas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\classes\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|solutionrelative:classes\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\classes\\jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|solutionrelative:classes\\jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|solutionrelative:jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\jornadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|solutionrelative:jornadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\ligas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0394057-BFBD-483E-B537-C082B277AB91}|LigaPortuguesaFinal.csproj|solutionrelative:ligas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Jogos.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Jogos.cs",
+              "RelativeDocumentMoniker": "Jogos.cs",
+              "ToolTip": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Jogos.cs",
+              "RelativeToolTip": "Jogos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T03:36:26.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Stats.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Classes\\Stats.cs",
+              "RelativeDocumentMoniker": "Classes\\Stats.cs",
+              "ToolTip": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Classes\\Stats.cs",
+              "RelativeToolTip": "Classes\\Stats.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T03:35:10.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Jogos.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Classes\\Jogos.cs",
+              "RelativeDocumentMoniker": "Classes\\Jogos.cs",
+              "ToolTip": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Classes\\Jogos.cs",
+              "RelativeToolTip": "Classes\\Jogos.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T02:44:32.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Jornadas.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Jornadas.cs",
+              "RelativeDocumentMoniker": "Jornadas.cs",
+              "ToolTip": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Jornadas.cs",
+              "RelativeToolTip": "Jornadas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T02:15:56.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Ligas.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Ligas.cs",
+              "RelativeDocumentMoniker": "Ligas.cs",
+              "ToolTip": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Ligas.cs",
+              "RelativeToolTip": "Ligas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T02:15:29.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Equipas.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Equipas.cs",
+              "RelativeDocumentMoniker": "Equipas.cs",
+              "ToolTip": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Equipas.cs",
+              "RelativeToolTip": "Equipas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T02:14:50.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LigaPortuguesaDB.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\LigaPortuguesaDB.edmx",
+              "RelativeDocumentMoniker": "LigaPortuguesaDB.edmx",
+              "ToolTip": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\LigaPortuguesaDB.edmx [Diagram1]",
+              "RelativeToolTip": "LigaPortuguesaDB.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-08-05T02:07:29.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T02:06:05.348Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAGwCAAAAAAAAAAAqwJ4CAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T02:08:23.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Jornadas.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Classes\\Jornadas.cs",
+              "RelativeDocumentMoniker": "Classes\\Jornadas.cs",
+              "ToolTip": "C:\\Users\\Msi\\source\\repos\\LigaPortuguesaFinal\\Classes\\Jornadas.cs",
+              "RelativeToolTip": "Classes\\Jornadas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T03:38:36.941Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
