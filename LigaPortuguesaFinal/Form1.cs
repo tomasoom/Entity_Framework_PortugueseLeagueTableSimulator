@@ -452,19 +452,32 @@ namespace LigaPortuguesaFinal
 
         }
 
-        private void cboJogo1_CheckedChanged(object sender, EventArgs e)
+        private void UpdateJogo(int index, CheckBox chkJogo, TextBox txtCasa, TextBox txtFora)
         {
             Jornadas jornada = db.Jornadas.Find(i);
-            Jogos jogo = jornada.Jogos.ToList<Jogos>()[0];
+            Jogos jogo = jornada.Jogos.ToList<Jogos>()[index];
 
-            if (chkJogo1.Checked)
+            if (chkJogo.Checked)
             {
-                jogo.GolosCasa = int.Parse(txtCasa1.Text);
-                jogo.GolosFora = int.Parse(txtFora1.Text);
-                jogo.IsFinished = true;
+                // Check if the textboxes are not empty
+                if (string.IsNullOrWhiteSpace(txtCasa.Text) || string.IsNullOrWhiteSpace(txtFora.Text))
+                {
+                    MessageBox.Show("Resultado inválido. Resetado para 0-0!");
+                    txtCasa.Text = "0"; // Set textbox value to "0" if empty
+                    txtFora.Text = "0"; // Set textbox value to "0" if empty
+                    chkJogo.Checked = false;
+                }
+                else
+                {
+                    // Update Jogo object with the parsed values
+                    jogo.GolosCasa = int.Parse(txtCasa.Text);
+                    jogo.GolosFora = int.Parse(txtFora.Text);
+                    jogo.IsFinished = true;
+                }
             }
             else
             {
+                // Reset Jogo values when checkbox is unchecked
                 jogo.GolosCasa = 0;
                 jogo.GolosFora = 0;
                 jogo.IsFinished = false;
@@ -472,182 +485,51 @@ namespace LigaPortuguesaFinal
 
             db.SaveChanges();
             PopularClassificacao();
+        }
+
+        private void cboJogo1_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateJogo(0, chkJogo1, txtCasa1, txtFora1);
         }
 
         private void cboJogo2_CheckedChanged(object sender, EventArgs e)
         {
-            Jornadas jornada = db.Jornadas.Find(i);
-            Jogos jogo = jornada.Jogos.ToList<Jogos>()[1];
-
-            if (chkJogo2.Checked)
-            {
-                jogo.GolosCasa = int.Parse(txtCasa2.Text);
-                jogo.GolosFora = int.Parse(txtFora2.Text);
-                jogo.IsFinished = true;
-            }
-            else
-            {
-                jogo.GolosCasa = 0;
-                jogo.GolosFora = 0;
-                jogo.IsFinished = false;
-            }
-
-            db.SaveChanges();
-            PopularClassificacao();
+            UpdateJogo(1, chkJogo2, txtCasa2, txtFora2);
         }
 
         private void cboJogo3_CheckedChanged(object sender, EventArgs e)
         {
-            Jornadas jornada = db.Jornadas.Find(i);
-            Jogos jogo = jornada.Jogos.ToList<Jogos>()[2];
-
-            if (chkJogo3.Checked)
-            {
-                jogo.GolosCasa = int.Parse(txtCasa3.Text);
-                jogo.GolosFora = int.Parse(txtFora3.Text);
-                jogo.IsFinished = true;
-            }
-            else
-            {
-                jogo.GolosCasa = 0;
-                jogo.GolosFora = 0;
-                jogo.IsFinished = false;
-            }
-
-            db.SaveChanges();
-            PopularClassificacao();
+            UpdateJogo(2, chkJogo3, txtCasa3, txtFora3);
         }
 
         private void cboJogo4_CheckedChanged(object sender, EventArgs e)
         {
-            Jornadas jornada = db.Jornadas.Find(i);
-            Jogos jogo = jornada.Jogos.ToList<Jogos>()[3];
-
-            if (chkJogo4.Checked)
-            {
-                jogo.GolosCasa = int.Parse(txtCasa4.Text);
-                jogo.GolosFora = int.Parse(txtFora4.Text);
-                jogo.IsFinished = true;
-            }
-            else
-            {
-                jogo.GolosCasa = 0;
-                jogo.GolosFora = 0;
-                jogo.IsFinished = false;
-            }
-
-            db.SaveChanges();
-            PopularClassificacao();
+            UpdateJogo(3, chkJogo4, txtCasa4, txtFora4);
         }
 
         private void cboJogo5_CheckedChanged(object sender, EventArgs e)
         {
-            Jornadas jornada = db.Jornadas.Find(i);
-            Jogos jogo = jornada.Jogos.ToList<Jogos>()[4];
-
-            if (chkJogo5.Checked)
-            {
-                jogo.GolosCasa = int.Parse(txtCasa5.Text);
-                jogo.GolosFora = int.Parse(txtFora5.Text);
-                jogo.IsFinished = true;
-            }
-            else
-            {
-                jogo.GolosCasa = 0;
-                jogo.GolosFora = 0;
-                jogo.IsFinished = false;
-            }
-
-            db.SaveChanges();
-            PopularClassificacao();
+            UpdateJogo(4, chkJogo5, txtCasa5, txtFora5);
         }
 
         private void cboJogo6_CheckedChanged(object sender, EventArgs e)
         {
-            Jornadas jornada = db.Jornadas.Find(i);
-            Jogos jogo = jornada.Jogos.ToList<Jogos>()[5];
-
-            if (chkJogo6.Checked)
-            {
-                jogo.GolosCasa = int.Parse(txtCasa6.Text);
-                jogo.GolosFora = int.Parse(txtFora6.Text);
-                jogo.IsFinished = true;
-            }
-            else
-            {
-                jogo.GolosCasa = 0;
-                jogo.GolosFora = 0;
-                jogo.IsFinished = false;
-            }
-
-            db.SaveChanges();
-            PopularClassificacao();
+            UpdateJogo(5, chkJogo6, txtCasa6, txtFora6);
         }
 
         private void cboJogo7_CheckedChanged(object sender, EventArgs e)
         {
-            Jornadas jornada = db.Jornadas.Find(i);
-            Jogos jogo = jornada.Jogos.ToList<Jogos>()[6];
-
-            if (chkJogo7.Checked)
-            {
-                jogo.GolosCasa = int.Parse(txtCasa7.Text);
-                jogo.GolosFora = int.Parse(txtFora7.Text);
-                jogo.IsFinished = true;
-            }
-            else
-            {
-                jogo.GolosCasa = 0;
-                jogo.GolosFora = 0;
-                jogo.IsFinished = false;
-            }
-
-            db.SaveChanges();
-            PopularClassificacao();
+            UpdateJogo(6, chkJogo7, txtCasa7, txtFora7);
         }
 
         private void cboJogo8_CheckedChanged(object sender, EventArgs e)
         {
-            Jornadas jornada = db.Jornadas.Find(i);
-            Jogos jogo = jornada.Jogos.ToList<Jogos>()[7];
-
-            if (chkJogo8.Checked)
-            {
-                jogo.GolosCasa = int.Parse(txtCasa8.Text);
-                jogo.GolosFora = int.Parse(txtFora8.Text);
-                jogo.IsFinished = true;
-            }
-            else
-            {
-                jogo.GolosCasa = 0;
-                jogo.GolosFora = 0;
-                jogo.IsFinished = false;
-            }
-
-            db.SaveChanges();
-            PopularClassificacao();
+            UpdateJogo(7, chkJogo8, txtCasa8, txtFora8);
         }
 
         private void cboJogo9_CheckedChanged(object sender, EventArgs e)
         {
-            Jornadas jornada = db.Jornadas.Find(i);
-            Jogos jogo = jornada.Jogos.ToList<Jogos>()[8];
-
-            if (chkJogo9.Checked)
-            {
-                jogo.GolosCasa = int.Parse(txtCasa9.Text);
-                jogo.GolosFora = int.Parse(txtFora9.Text);
-                jogo.IsFinished = true;
-            }
-            else
-            {
-                jogo.GolosCasa = 0;
-                jogo.GolosFora = 0;
-                jogo.IsFinished = false;
-            }
-
-            db.SaveChanges();
-            PopularClassificacao();
+            UpdateJogo(8, chkJogo9, txtCasa9, txtFora9);
         }
 
         private void btnReset_Click(object sender, EventArgs e)
