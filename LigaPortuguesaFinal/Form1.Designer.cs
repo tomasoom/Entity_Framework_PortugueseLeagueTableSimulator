@@ -193,7 +193,7 @@
             // lblJornada
             // 
             this.lblJornada.AutoSize = true;
-            this.lblJornada.Location = new System.Drawing.Point(247, 9);
+            this.lblJornada.Location = new System.Drawing.Point(261, 27);
             this.lblJornada.Name = "lblJornada";
             this.lblJornada.Size = new System.Drawing.Size(77, 13);
             this.lblJornada.TabIndex = 106;
@@ -201,7 +201,7 @@
             // 
             // btnDepois
             // 
-            this.btnDepois.Location = new System.Drawing.Point(984, 371);
+            this.btnDepois.Location = new System.Drawing.Point(911, 371);
             this.btnDepois.Name = "btnDepois";
             this.btnDepois.Size = new System.Drawing.Size(75, 23);
             this.btnDepois.TabIndex = 105;
@@ -211,7 +211,7 @@
             // 
             // btnAntes
             // 
-            this.btnAntes.Location = new System.Drawing.Point(871, 372);
+            this.btnAntes.Location = new System.Drawing.Point(798, 372);
             this.btnAntes.Name = "btnAntes";
             this.btnAntes.Size = new System.Drawing.Size(75, 23);
             this.btnAntes.TabIndex = 104;
@@ -725,7 +725,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(928, 410);
+            this.btnReset.Location = new System.Drawing.Point(855, 410);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
             this.btnReset.TabIndex = 126;
@@ -736,7 +736,7 @@
             // chkClassificacaoFinal
             // 
             this.chkClassificacaoFinal.AutoSize = true;
-            this.chkClassificacaoFinal.Location = new System.Drawing.Point(1121, 367);
+            this.chkClassificacaoFinal.Location = new System.Drawing.Point(1059, 367);
             this.chkClassificacaoFinal.Name = "chkClassificacaoFinal";
             this.chkClassificacaoFinal.Size = new System.Drawing.Size(113, 17);
             this.chkClassificacaoFinal.TabIndex = 127;
@@ -759,9 +759,9 @@
             this.lvPontos});
             this.lvClassificacao.GridLines = true;
             this.lvClassificacao.HideSelection = false;
-            this.lvClassificacao.Location = new System.Drawing.Point(665, 20);
+            this.lvClassificacao.Location = new System.Drawing.Point(603, 27);
             this.lvClassificacao.Name = "lvClassificacao";
-            this.lvClassificacao.Size = new System.Drawing.Size(569, 346);
+            this.lvClassificacao.Size = new System.Drawing.Size(569, 334);
             this.lvClassificacao.TabIndex = 128;
             this.lvClassificacao.UseCompatibleStateImageBehavior = false;
             this.lvClassificacao.View = System.Windows.Forms.View.Details;
