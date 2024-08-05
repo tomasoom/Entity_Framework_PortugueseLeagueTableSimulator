@@ -37,6 +37,7 @@ namespace LigaPortuguesaFinal
             foreach (Equipas equipa in db.Equipas.ToList())
             {
                 Stats statsEquipa = new Stats(equipa);
+                statsEquipa.Jogos = 0;
                 statsEquipa.Vitorias = 0;
                 statsEquipa.Empates = 0;
                 statsEquipa.Derrotas = 0;
@@ -70,10 +71,12 @@ namespace LigaPortuguesaFinal
 
                         if (statsCasa != null && statsFora != null)
                         {
+                            statsCasa.Jogos += 1;
                             statsCasa.GM += golosCasa;
                             statsCasa.GS += golosFora;
                             statsCasa.DG += DGCasa;
 
+                            statsFora.Jogos += 1;
                             statsFora.GM += golosFora;
                             statsFora.GS += golosCasa;
                             statsFora.DG += DGFora;
@@ -117,6 +120,7 @@ namespace LigaPortuguesaFinal
             {
                 ListViewItem item = new ListViewItem(position.ToString()); // Position
                 item.SubItems.Add(stat.Equipa.Nome); // Team
+                item.SubItems.Add(stat.Jogos.ToString()); // Games
                 item.SubItems.Add(stat.Vitorias.ToString()); // Wins
                 item.SubItems.Add(stat.Empates.ToString()); // Draws
                 item.SubItems.Add(stat.Derrotas.ToString()); // Losses
@@ -175,6 +179,7 @@ namespace LigaPortuguesaFinal
             foreach (Equipas equipa in db.Equipas.ToList())
             {
                 Stats statsEquipa = new Stats(equipa);
+                statsEquipa.Jogos = 0;
                 statsEquipa.Vitorias = 0;
                 statsEquipa.Empates = 0;
                 statsEquipa.Derrotas = 0;
@@ -205,10 +210,12 @@ namespace LigaPortuguesaFinal
 
                     if (statsCasa != null && statsFora != null)
                     {
+                        statsCasa.Jogos += 1;
                         statsCasa.GM += golosCasa;
                         statsCasa.GS += golosFora;
                         statsCasa.DG += DGCasa;
 
+                        statsFora.Jogos += 1;
                         statsFora.GM += golosFora;
                         statsFora.GS += golosCasa;
                         statsFora.DG += DGFora;
@@ -250,6 +257,7 @@ namespace LigaPortuguesaFinal
             {
                 ListViewItem item = new ListViewItem(position.ToString()); // Position
                 item.SubItems.Add(stat.Equipa.Nome); // Team
+                item.SubItems.Add(stat.Jogos.ToString()); //Games
                 item.SubItems.Add(stat.Vitorias.ToString()); // Wins
                 item.SubItems.Add(stat.Empates.ToString()); // Draws
                 item.SubItems.Add(stat.Derrotas.ToString()); // Losses

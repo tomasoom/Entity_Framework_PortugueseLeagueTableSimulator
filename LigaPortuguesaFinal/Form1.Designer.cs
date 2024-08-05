@@ -85,16 +85,6 @@
             this.txtFora1 = new System.Windows.Forms.TextBox();
             this.lblCasa1 = new System.Windows.Forms.Label();
             this.txtCasa1 = new System.Windows.Forms.TextBox();
-            this.lvClassificacao = new System.Windows.Forms.ListView();
-            this.lvPosicao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lvEquipa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lvVitorias = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lvEmpates = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lvDerrotas = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lvGM = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lvGS = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lvDG = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lvPontos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chkJogo1 = new System.Windows.Forms.CheckBox();
             this.chkJogo3 = new System.Windows.Forms.CheckBox();
             this.chkJogo2 = new System.Windows.Forms.CheckBox();
@@ -106,6 +96,17 @@
             this.chkJogo9 = new System.Windows.Forms.CheckBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.chkClassificacaoFinal = new System.Windows.Forms.CheckBox();
+            this.lvClassificacao = new System.Windows.Forms.ListView();
+            this.lvPosicao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvEquipa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvJogos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvVitorias = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvEmpates = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvDerrotas = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvGM = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvGS = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvDG = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvPontos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lblEstadio9
@@ -200,7 +201,7 @@
             // 
             // btnDepois
             // 
-            this.btnDepois.Location = new System.Drawing.Point(977, 520);
+            this.btnDepois.Location = new System.Drawing.Point(984, 371);
             this.btnDepois.Name = "btnDepois";
             this.btnDepois.Size = new System.Drawing.Size(75, 23);
             this.btnDepois.TabIndex = 105;
@@ -210,7 +211,7 @@
             // 
             // btnAntes
             // 
-            this.btnAntes.Location = new System.Drawing.Point(864, 521);
+            this.btnAntes.Location = new System.Drawing.Point(871, 372);
             this.btnAntes.Name = "btnAntes";
             this.btnAntes.Size = new System.Drawing.Size(75, 23);
             this.btnAntes.TabIndex = 104;
@@ -623,66 +624,6 @@
             this.txtCasa1.Text = "0";
             this.txtCasa1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lvClassificacao
-            // 
-            this.lvClassificacao.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.lvPosicao,
-            this.lvEquipa,
-            this.lvVitorias,
-            this.lvEmpates,
-            this.lvDerrotas,
-            this.lvGM,
-            this.lvGS,
-            this.lvDG,
-            this.lvPontos});
-            this.lvClassificacao.GridLines = true;
-            this.lvClassificacao.HideSelection = false;
-            this.lvClassificacao.Location = new System.Drawing.Point(639, 34);
-            this.lvClassificacao.Name = "lvClassificacao";
-            this.lvClassificacao.Size = new System.Drawing.Size(595, 473);
-            this.lvClassificacao.TabIndex = 116;
-            this.lvClassificacao.UseCompatibleStateImageBehavior = false;
-            this.lvClassificacao.View = System.Windows.Forms.View.Details;
-            this.lvClassificacao.SelectedIndexChanged += new System.EventHandler(this.lvClassificacao_SelectedIndexChanged);
-            // 
-            // lvPosicao
-            // 
-            this.lvPosicao.Text = "#";
-            this.lvPosicao.Width = 20;
-            // 
-            // lvEquipa
-            // 
-            this.lvEquipa.Text = "Equipa";
-            this.lvEquipa.Width = 150;
-            // 
-            // lvVitorias
-            // 
-            this.lvVitorias.Text = "Vitórias";
-            // 
-            // lvEmpates
-            // 
-            this.lvEmpates.Text = "Empates";
-            // 
-            // lvDerrotas
-            // 
-            this.lvDerrotas.Text = "Derrotas";
-            // 
-            // lvGM
-            // 
-            this.lvGM.Text = "GM";
-            // 
-            // lvGS
-            // 
-            this.lvGS.Text = "GS";
-            // 
-            // lvDG
-            // 
-            this.lvDG.Text = "DG";
-            // 
-            // lvPontos
-            // 
-            this.lvPontos.Text = "Pontos";
-            // 
             // chkJogo1
             // 
             this.chkJogo1.AutoSize = true;
@@ -784,7 +725,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(921, 559);
+            this.btnReset.Location = new System.Drawing.Point(928, 410);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
             this.btnReset.TabIndex = 126;
@@ -795,7 +736,7 @@
             // chkClassificacaoFinal
             // 
             this.chkClassificacaoFinal.AutoSize = true;
-            this.chkClassificacaoFinal.Location = new System.Drawing.Point(1121, 513);
+            this.chkClassificacaoFinal.Location = new System.Drawing.Point(1121, 367);
             this.chkClassificacaoFinal.Name = "chkClassificacaoFinal";
             this.chkClassificacaoFinal.Size = new System.Drawing.Size(113, 17);
             this.chkClassificacaoFinal.TabIndex = 127;
@@ -803,11 +744,75 @@
             this.chkClassificacaoFinal.UseVisualStyleBackColor = true;
             this.chkClassificacaoFinal.CheckedChanged += new System.EventHandler(this.cboClassificacaoFinal_CheckedChanged);
             // 
+            // lvClassificacao
+            // 
+            this.lvClassificacao.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvPosicao,
+            this.lvEquipa,
+            this.lvJogos,
+            this.lvVitorias,
+            this.lvEmpates,
+            this.lvDerrotas,
+            this.lvGM,
+            this.lvGS,
+            this.lvDG,
+            this.lvPontos});
+            this.lvClassificacao.GridLines = true;
+            this.lvClassificacao.HideSelection = false;
+            this.lvClassificacao.Location = new System.Drawing.Point(665, 20);
+            this.lvClassificacao.Name = "lvClassificacao";
+            this.lvClassificacao.Size = new System.Drawing.Size(569, 346);
+            this.lvClassificacao.TabIndex = 128;
+            this.lvClassificacao.UseCompatibleStateImageBehavior = false;
+            this.lvClassificacao.View = System.Windows.Forms.View.Details;
+            // 
+            // lvPosicao
+            // 
+            this.lvPosicao.Text = "#";
+            this.lvPosicao.Width = 25;
+            // 
+            // lvEquipa
+            // 
+            this.lvEquipa.Text = "Equipa";
+            // 
+            // lvJogos
+            // 
+            this.lvJogos.Text = "Jogos";
+            // 
+            // lvVitorias
+            // 
+            this.lvVitorias.Text = "Vitórias";
+            // 
+            // lvEmpates
+            // 
+            this.lvEmpates.Text = "Empates";
+            // 
+            // lvDerrotas
+            // 
+            this.lvDerrotas.Text = "Derrotas";
+            // 
+            // lvGM
+            // 
+            this.lvGM.Text = "GM";
+            // 
+            // lvGS
+            // 
+            this.lvGS.Text = "GS";
+            // 
+            // lvDG
+            // 
+            this.lvDG.Text = "DG";
+            // 
+            // lvPontos
+            // 
+            this.lvPontos.Text = "Pontos";
+            // 
             // frmLigaPortuguesa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1246, 811);
+            this.Controls.Add(this.lvClassificacao);
             this.Controls.Add(this.chkClassificacaoFinal);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.chkJogo9);
@@ -819,7 +824,6 @@
             this.Controls.Add(this.chkJogo2);
             this.Controls.Add(this.chkJogo3);
             this.Controls.Add(this.chkJogo1);
-            this.Controls.Add(this.lvClassificacao);
             this.Controls.Add(this.lblEstadio9);
             this.Controls.Add(this.lblEstadio8);
             this.Controls.Add(this.lblEstadio7);
@@ -944,16 +948,6 @@
         private System.Windows.Forms.TextBox txtFora1;
         private System.Windows.Forms.Label lblCasa1;
         private System.Windows.Forms.TextBox txtCasa1;
-        private System.Windows.Forms.ListView lvClassificacao;
-        private System.Windows.Forms.ColumnHeader lvPosicao;
-        private System.Windows.Forms.ColumnHeader lvEquipa;
-        private System.Windows.Forms.ColumnHeader lvVitorias;
-        private System.Windows.Forms.ColumnHeader lvEmpates;
-        private System.Windows.Forms.ColumnHeader lvDerrotas;
-        private System.Windows.Forms.ColumnHeader lvGM;
-        private System.Windows.Forms.ColumnHeader lvGS;
-        private System.Windows.Forms.ColumnHeader lvDG;
-        private System.Windows.Forms.ColumnHeader lvPontos;
         private System.Windows.Forms.CheckBox chkJogo1;
         private System.Windows.Forms.CheckBox chkJogo3;
         private System.Windows.Forms.CheckBox chkJogo2;
@@ -965,6 +959,17 @@
         private System.Windows.Forms.CheckBox chkJogo9;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.CheckBox chkClassificacaoFinal;
+        private System.Windows.Forms.ListView lvClassificacao;
+        private System.Windows.Forms.ColumnHeader lvPosicao;
+        private System.Windows.Forms.ColumnHeader lvEquipa;
+        private System.Windows.Forms.ColumnHeader lvJogos;
+        private System.Windows.Forms.ColumnHeader lvVitorias;
+        private System.Windows.Forms.ColumnHeader lvEmpates;
+        private System.Windows.Forms.ColumnHeader lvDerrotas;
+        private System.Windows.Forms.ColumnHeader lvGM;
+        private System.Windows.Forms.ColumnHeader lvGS;
+        private System.Windows.Forms.ColumnHeader lvDG;
+        private System.Windows.Forms.ColumnHeader lvPontos;
     }
 }
 

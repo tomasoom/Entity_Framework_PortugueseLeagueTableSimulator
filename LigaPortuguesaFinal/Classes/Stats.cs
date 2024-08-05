@@ -9,6 +9,7 @@ namespace LigaPortuguesaFinal
     public class Stats
     {
         public Equipas Equipa { get; set; }
+        public int Jogos { get; set; }
         public int Vitorias { get; set; }
         public int Empates { get; set; }
         public int Derrotas { get; set; }
@@ -21,6 +22,7 @@ namespace LigaPortuguesaFinal
         public Stats(Equipas equipa)
         {
             this.Equipa = equipa;
+            this.Jogos = 0;
             this.Vitorias = 0;
             this.Empates = 0;
             this.Derrotas = 0;
